@@ -10,18 +10,14 @@
         android:id="@+id/appTitle"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_marginStart="158dp"
-        android:layout_marginLeft="158dp"
-        android:layout_marginTop="69dp"
-        android:layout_marginEnd="158dp"
-        android:layout_marginRight="158dp"
+        android:layout_marginTop="80dp"
         android:layout_marginBottom="28dp"
         android:text="@string/appTitle"
         app:layout_constraintBottom_toTopOf="@+id/heightLabel"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.463" />
+        app:layout_constraintVertical_bias="0.473" />
 
     <TextView
         android:id="@+id/heightLabel"
@@ -30,7 +26,8 @@
         android:layout_marginBottom="28dp"
         android:text="@string/heightLabel"
         app:layout_constraintBottom_toTopOf="@+id/heightForm"
-        tools:layout_editor_absoluteX="191dp" />
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent" />
 
     <EditText
         android:id="@+id/heightForm"
@@ -41,42 +38,65 @@
         android:inputType="textPersonName"
         android:text="@string/heightForm"
         app:layout_constraintBottom_toTopOf="@+id/weightLabel"
-        tools:layout_editor_absoluteX="105dp" />
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent" />
 
     <TextView
         android:id="@+id/weightLabel"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_marginBottom="26dp"
+        android:layout_marginStart="188dp"
+        android:layout_marginLeft="188dp"
+        android:layout_marginEnd="195dp"
+        android:layout_marginRight="195dp"
+        android:layout_marginBottom="28dp"
         android:text="@string/weightLabel"
         app:layout_constraintBottom_toTopOf="@+id/weightForm"
-        tools:layout_editor_absoluteX="188dp" />
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="1.0"
+        app:layout_constraintStart_toStartOf="parent" />
 
     <EditText
         android:id="@+id/weightForm"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
+        android:layout_marginStart="100dp"
+        android:layout_marginLeft="100dp"
+        android:layout_marginEnd="101dp"
+        android:layout_marginRight="101dp"
         android:layout_marginBottom="49dp"
         android:ems="10"
         android:inputType="textPersonName"
         android:text="@string/weightForm"
         app:layout_constraintBottom_toTopOf="@+id/buttonCalc"
-        tools:layout_editor_absoluteX="100dp" />
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent" />
 
     <Button
         android:id="@+id/buttonCalc"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
+        android:layout_marginStart="153dp"
+        android:layout_marginLeft="153dp"
+        android:layout_marginEnd="122dp"
+        android:layout_marginRight="122dp"
         android:layout_marginBottom="79dp"
         android:text="@string/buttonCalc"
         app:layout_constraintBottom_toTopOf="@+id/bmiScore"
-        tools:layout_editor_absoluteX="153dp" />
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent" />
 
     <TextView
         android:id="@+id/bmiScore"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
+        android:layout_marginStart="172dp"
+        android:layout_marginLeft="172dp"
+        android:layout_marginEnd="172dp"
+        android:layout_marginRight="172dp"
+        android:layout_marginBottom="105dp"
         android:text="@string/bmiScore"
-        tools:layout_editor_absoluteX="172dp"
-        tools:layout_editor_absoluteY="607dp" />
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent" />
 </androidx.constraintlayout.widget.ConstraintLayout>
