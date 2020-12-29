@@ -81,6 +81,7 @@
         android:layout_marginEnd="122dp"
         android:layout_marginRight="122dp"
         android:layout_marginBottom="79dp"
+        android:onClick="onClickButton"
         android:text="@string/buttonCalc"
         app:layout_constraintBottom_toTopOf="@+id/bmiScore"
         app:layout_constraintEnd_toEndOf="parent"
